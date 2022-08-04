@@ -28,7 +28,7 @@ const io = new Server(httpServer, {
 app.use(
     cors({
       origin: "*",
-      methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+      methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
       preflightContinue: true,
       optionsSuccessStatus: 204,
     })
