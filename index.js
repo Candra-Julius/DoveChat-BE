@@ -15,7 +15,6 @@ const { disconnect } = require('process')
 const { log } = require('console')
 const chatModule = require('./src/Modul/chat')
 const httpServer = http.createServer(app)
-const PORT = 8080
 const io = new Server(httpServer, {
     cors: {
         methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -92,6 +91,6 @@ io.on('connection',(socket)=>{
     })
 })
 
-httpServer.listen(PORT, ()=>{
+httpServer.listen(process.env.PORT, ()=>{
     console.log(`Port ${PORT} is runing`);
 })
