@@ -27,10 +27,11 @@ const io = new Server(httpServer, {
 })
 app.use(
     cors({
-      origin: "*",
-      methods: "GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS",
-      preflightContinue: true,
-      optionsSuccessStatus: 204,
+      methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    preflightContinue: true,
+    optionsSuccessStatus: 204,
+    credentials: true,
+    origin: ['http://localhost:3000']
     })
   );
 
