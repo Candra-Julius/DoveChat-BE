@@ -92,5 +92,5 @@ io.on('connection',(socket)=>{
 })
 
 httpServer.listen(process.env.PORT, ()=>{
-    console.log(`Port ${PORT} is runing`);
+    console.log(`Port ${process.env.PORT} is runing`);
 })
