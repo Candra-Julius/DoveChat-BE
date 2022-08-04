@@ -21,7 +21,7 @@ const io = new Server(httpServer, {
         preflightContinue: true,
         optionsSuccessStatus: 204,
         credentials: true,
-        origin: 'http://localhost:3000'
+        origin: 'https://dove-chat-fe.vercel.app'
     }
 })
 app.use(
