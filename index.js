@@ -81,7 +81,7 @@ io.on('connection',(socket)=>{
       console.log(detail);
       chatModule.insertChat(detail)
       .then(()=>{
-        socket.broadcast.to(data.idReciver).emit('message', {message: detail.message, date: detail.date})
+        socket.broadcast.to(data.idReciver).emit('message', {message: detail.message, date: moment(detail.date).format('LT')})
       })
         // socket.emit('message', {message: data.messageBody, date: new Date()})
     })
