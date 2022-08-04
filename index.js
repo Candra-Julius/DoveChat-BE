@@ -30,7 +30,7 @@ app.use(
     preflightContinue: true,
     optionsSuccessStatus: 204,
     credentials: true,
-    origin: ['https://dove-chat-fe.vercel.app']
+    origin: 'https://dove-chat-fe.vercel.app'
     })
   );
 
