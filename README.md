@@ -50,7 +50,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Create a Node.js app for building Hire Job RESTful APIs using Express.
+Create a Node.js app for building DoveChat RESTful APIs using Express.
 
 ### Built With
 This app was built with some technologies below:
