@@ -6,7 +6,7 @@
   <h3 align="center">DoveChat Backend</h3>
 
   <p align="center">
-    Create a Node.js app for building Hire Job RESTful APIs using Express.
+    Create a Node.js app for building DoveChat RESTful APIs using Express.
     <br />
     <a href="#table-of-contents"><strong>Explore the docs »</strong></a>
     <br />
